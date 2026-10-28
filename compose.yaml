@@ -17,16 +17,14 @@ services:
       start_period: 5s
 
   backend:
-    build:
-      context: ./backend
-    image: fest-backend:0.1
+    image: singhabhisht200/fest-backend:1.0.0
     environment:
       REGNO: "${REGNO:?Set REGNO in the shell}"
       DB_HOST: db
       DB_NAME: festpass
       DB_USER: festpass
       DB_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
-      APP_VERSION: dev
+      APP_VERSION: "1.0.0"
     networks:
       - frontend-backend
       - backend-db

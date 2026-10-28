@@ -19,3 +19,11 @@
 - Command exit code: ACTUAL_EXIT_CODE
 
 - Result: PASS only if the exit code is 0.
+
+## Docker Hub Release
+
+- Repository: https://hub.docker.com/r/singhabhisht200/fest-backend
+- Version: 1.0.0
+- Image: singhabhisht200/fest-backend:1.0.0
+- Digest: sha256:PASTE_THE_ACTUAL_PUSH_DIGEST_HERE
+- Additional tag: singhabhisht200/fest-backend:1.0
